@@ -1,12 +1,16 @@
 import './App.css'
-import './App.less'
+import { Suspense } from 'react'
+import { RouteConfig } from '@/RouteConfig'
+import { QueryClientProvider } from './componets/QueryClientProvider'
 
 function App() {
   return (
     <>
-      <div className="App">
-        <h1 className="hello text-red-500 text-3xl font-bold underline">Hello world!</h1>
-      </div>
+      <QueryClientProvider>
+        <Suspense fallback={<>loading</>}>
+          <RouteConfig></RouteConfig>
+        </Suspense>
+      </QueryClientProvider>
     </>
   )
 }
