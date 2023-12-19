@@ -1,5 +1,5 @@
 import { useMutation, useQuery } from 'react-query'
-import { get, post, request } from '../../services/request'
+import { get } from '../../services/request'
 import { XHR_RETRY_DELAY } from '../../configs/env'
 
 const QUERY_KEY = 'dummy'

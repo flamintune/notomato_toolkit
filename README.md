@@ -7,10 +7,10 @@
 ## todolist
 
 - [ ] 基于 create-react-app 的基础脚手架
+- [ ] 登陆功能 Auth oauth2-server by nodejs
 - [ ] backend service
-- [ ] 登陆功能 Auth
-- [ ] 支付
 - [ ] Email 模板
+- [ ] 支付
 - [ ] 验证码
 - [ ] 文件上传
 - [ ] 用户权限管理
@@ -19,6 +19,7 @@
 ## Awesome
 
 - favicon.icon 图标生成 https://favicon.io/favicon-converter/
+- oauth2-server by nodejs https://oauth2-server.readthedocs.io/en/latest/docs/getting-started.html
 
 ## Bug
 

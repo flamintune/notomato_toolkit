@@ -1,6 +1,6 @@
-import { useEffect } from 'react'
+// import { useEffect } from 'react'
 import { useDummyQuery } from '../../hooks/dummy/useDummy'
-import { get } from '../../services/request'
+// import { get } from '../../services/request'
 
 export function DummyPage() {
   const { data: dummyData, isLoading, isSuccess } = useDummyQuery()
