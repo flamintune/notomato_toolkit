@@ -31,9 +31,25 @@ const cache = apicache.middleware
  *                 data:
  *                   type: array 
  *                   items: 
- *                     type: object
+ *                     $ref: "#/components/schemas/Workout"
+ *       5XX:
+ *         description: FAILED
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 status: 
+ *                   type: string
+ *                   example: FAILED
+ *                 data:
+ *                   type: object
+ *                   properties:
+ *                     error:
+ *                       type: string 
+ *                       example: "Some error message"
  */
-//! best practice
+//! best practice use cache 针对特定point
 router.get('/', cache('2 minutes'), workoutController.getAllWorkouts)
 
 router.get('/:workoutId', workoutController.getOneWorkout)
