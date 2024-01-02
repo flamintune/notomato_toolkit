@@ -1,0 +1,3 @@
+[submodule "news-mail"]
+	path = news-mail
+	url = https://github.com/flamintune/news-mail.git

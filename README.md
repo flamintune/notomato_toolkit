@@ -9,7 +9,7 @@
 - [ ] 基于 create-react-app 的基础脚手架
 - [ ] 登陆功能 Auth oauth2-server by nodejs
 - [ ] backend service
-- [ ] Email 模板
+- [ ] Email 发送 nodeemailer 模板 beefree.io
 - [ ] 支付
 - [ ] 验证码
 - [ ] 文件上传
