@@ -29,3 +29,6 @@ backend/node_modules
 backend/.env
 backend/testAPI.js
 backend/temp
+
+# cur
+node_modules

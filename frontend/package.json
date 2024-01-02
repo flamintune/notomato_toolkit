@@ -60,11 +60,11 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
+    "start": "cross-env NODE_ENV=development node scripts/start.js",
+    "build": "cross-env NODE_ENV=production node scripts/build.js",
     "test": "node scripts/test.js",
-    "lint": "eslint src --ext js,jsx,ts,tsx",
-    "format": "prettier --write ."
+    "lint": "cross-env NODE_ENV=development eslint src --ext js,jsx,ts,tsx",
+    "format": "cross-env NODE_ENV=development prettier --write ."
   },
   "eslintConfig": {
     "extends": [
@@ -87,6 +87,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "cross-env": "^7.0.3",
     "eslint-config-prettier": "^9.1.0",
     "less": "^4.2.0",
     "less-loader": "^11.1.3",
