@@ -3,7 +3,7 @@ const apicache = require('apicache')
 const workoutController = require('../../controllers/workoutController')
 const recordController = require('../../controllers/recordController')
 const router = express.Router()
-const cache = apicache.middleware
+// const cache = apicache.middleware
 
 //? protected route
 // for authenticated
@@ -50,7 +50,7 @@ const cache = apicache.middleware
  *                       example: "Some error message"
  */
 //! best practice use cache 针对特定point
-router.get('/', cache('2 minutes'), workoutController.getAllWorkouts)
+router.get('/', workoutController.getAllWorkouts)
 
 router.get('/:workoutId', workoutController.getOneWorkout)
 

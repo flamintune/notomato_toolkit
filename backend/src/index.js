@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000
 const cache = apicache.middleware
 const { swaggerDocs: V1SwaggerDocs } = require("./v1/swagger");
 // for client data res data  res body => json
-app.use(cache('2 minutes'))
+// app.use(cache('2 minutes'))
 app.use(bodyParser.json())
 app.use('/api/v1/workouts', v1WorkoutRouter)
 

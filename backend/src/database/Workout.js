@@ -43,7 +43,9 @@ const { saveToDatabase } = require('./utils')
 const getAllWorkouts = filterParams => {
   let workouts = DB.workouts
   try {
-    return workouts.filter(workout => workout.mode.toLowerCase().includes(filterParams.mode))
+    if (filterParams.mode)
+      return workouts.filter(workout => workout.mode.toLowerCase().includes(filterParams.mode))
+    return workouts
   } catch (error) {
     throw { status: 500, message: error }
   }

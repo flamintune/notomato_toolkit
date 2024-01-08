@@ -9,7 +9,8 @@
 - [ ] 基于 create-react-app 的基础脚手架
 - [ ] 登陆功能 Auth oauth2-server by nodejs
 - [ ] backend service
-- [ ] Email 发送 nodeemailer 模板 beefree.io
+- [ ] Email 发送 nodeemailer 模板 beefree.io or hbs
+- [ ] 基于 yeoman 脚手架工具: 模板引擎 | 测试框架 | 代码质量
 - [ ] 支付
 - [ ] 验证码
 - [ ] 文件上传
